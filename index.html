@@ -137,6 +137,15 @@
             text-align: center;
         }
         .card h3 { margin-bottom: 10px; }
+        .card p a {
+            color: #1b6b28;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px dashed #1b6b28;
+        }
+        .card p a:hover {
+            text-decoration: underline;
+        }
         .services-grid, .locations-grid, .materials-grid {
             display: flex;
             flex-wrap: wrap;
@@ -273,8 +282,8 @@
         <button class="tab-button lang-ar active" data-tab-ar="home-ar">الرئيسية</button>
         <button class="tab-button lang-ar" data-tab-ar="services-ar">خدماتنا</button>
         <button class="tab-button lang-ar" data-tab-ar="about-ar">من نحن</button>
-        <button class="tab-button lang-ar" data-tab-ar="where-ar">مواقع اعادة التدوير في الاردن</button>
-        <button class="tab-button lang-ar" data-tab-ar="what-ar"> البحث عن اعادة التدوير </button>
+        <button class="tab-button lang-ar" data-tab-ar="where-ar">أين ندور</button>
+        <button class="tab-button lang-ar" data-tab-ar="what-ar">ماذا ندور</button>
         <button class="tab-button lang-ar" data-tab-ar="recycle-ar">الحملة</button>
         <button class="tab-button lang-ar" data-tab-ar="contact-ar">اتصل بنا</button>
         
@@ -282,8 +291,8 @@
         <button class="tab-button lang-en" data-tab-en="home-en">Home</button>
         <button class="tab-button lang-en" data-tab-en="services-en">Services</button>
         <button class="tab-button lang-en" data-tab-en="about-en">About Us</button>
-        <button class="tab-button lang-en" data-tab-en="where-en">Recycling sites in Jordan</button>
-        <button class="tab-button lang-en" data-tab-en="what-en">Searching for recycling</button>
+        <button class="tab-button lang-en" data-tab-en="where-en">Locations</button>
+        <button class="tab-button lang-en" data-tab-en="what-en">Materials</button>
         <button class="tab-button lang-en" data-tab-en="recycle-en">Campaign</button>
         <button class="tab-button lang-en" data-tab-en="contact-en">Contact</button>
         
@@ -301,9 +310,24 @@
     </div>
     <h2 style="text-align:center;">لماذا إعادة تدوير البلاستيك؟</h2>
     <div class="cards">
-        <div class="card"><h3>تقليل التلوث البلاستيكي</h3><p>نحمي الطبيعة والبحار من النفايات البلاستيكية</p></div>
-        <div class="card"><h3>توفير الطاقة</h3><p>إعادة تدوير البلاستيك توفر طاقة الإنتاج بنسبة تصل إلى 66%</p></div>
-        <div class="card"><h3>حماية الكائنات</h3><p>نمنع ابتلاع البلاستيك للسلاحف والأسماك والطيور</p></div>
+        <div class="card">
+            <h3>تقليل التلوث البلاستيكي</h3>
+            <p>نحمي الطبيعة والبحار من النفايات البلاستيكية 
+                <br><a href="https://mawdoo3.com/%D9%83%D9%8A%D9%81%D9%8A%D8%A9_%D8%AD%D9%85%D8%A7%D9%8A%D8%A9_%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D8%A9_%D9%85%D9%86_%D8%A7%D9%84%D8%A8%D9%84%D8%A7%D8%B3%D8%AA%D9%8A%D9%83" target="_blank" rel="noopener noreferrer">(المصدر)</a>
+            </p>
+        </div>
+        <div class="card">
+            <h3>توفير الطاقة</h3>
+            <p>إعادة تدوير البلاستيك توفر طاقة الإنتاج بنسبة تصل إلى 66%
+                <br><a href="https://attaqa.net/2023/05/02/%D8%AA%D8%AD%D9%88%D9%8A%D9%84-%D8%A7%D9%84%D9%86%D9%81%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A5%D9%84%D9%89-%D8%B7%D8%A7%D9%82%D8%A9-%D9%8A%D9%88%D9%81%D8%B1-%D8%AD%D9%84%D9%8B%D8%A7-%D9%85%D9%84%D9%87%D9%85/" target="_blank" rel="noopener noreferrer">(المصدر)</a>
+            </p>
+        </div>
+        <div class="card">
+            <h3>حماية الكائنات</h3>
+            <p>نمنع ابتلاع البلاستيك للسلاحف والأسماك والطيور
+                <br><a href="https://geolougy.com/k/%D8%B8%D9%87%D9%88%D8%B1-%D9%85%D8%B4%D9%83%D9%84%D8%A9-%D8%AA%D9%84%D9%88%D8%AB-%D8%A7%D9%84%D8%B4%D9%88%D8%A7%D8%B7%D8%A6-%D9%88%D9%85%D8%A7-%D9%87%D9%8A-%D8%A3%D8%B3%D8%A8%D8%A7%D8%A8%D9%87" target="_blank" rel="noopener noreferrer">(المصدر)</a>
+            </p>
+        </div>
     </div>
 </div>
 
@@ -421,9 +445,24 @@
     </div>
     <h2 style="text-align:center;">Why Recycle Plastic?</h2>
     <div class="cards">
-        <div class="card"><h3>Reduce Plastic Pollution</h3><p>We protect nature and seas from plastic waste</p></div>
-        <div class="card"><h3>Save Energy</h3><p>Plastic recycling saves up to 66% of production energy</p></div>
-        <div class="card"><h3>Protect Wildlife</h3><p>We prevent turtles, fish, and birds from ingesting plastic</p></div>
+        <div class="card">
+            <h3>Reduce Plastic Pollution</h3>
+            <p>We protect nature and seas from plastic waste
+                <br><a href="https://mawdoo3.com/%D9%83%D9%8A%D9%81%D9%8A%D8%A9_%D8%AD%D9%85%D8%A7%D9%8A%D8%A9_%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D8%A9_%D9%85%D9%86_%D8%A7%D9%84%D8%A8%D9%84%D8%A7%D8%B3%D8%AA%D9%8A%D9%83" target="_blank" rel="noopener noreferrer">(Source)</a>
+            </p>
+        </div>
+        <div class="card">
+            <h3>Save Energy</h3>
+            <p>Plastic recycling saves up to 66% of production energy
+                <br><a href="https://attaqa.net/2023/05/02/%D8%AA%D8%AD%D9%88%D9%8A%D9%84-%D8%A7%D9%84%D9%86%D9%81%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A5%D9%84%D9%89-%D8%B7%D8%A7%D9%82%D8%A9-%D9%8A%D9%88%D9%81%D8%B1-%D8%AD%D9%84%D9%8B%D8%A7-%D9%85%D9%84%D9%87%D9%85/" target="_blank" rel="noopener noreferrer">(Source)</a>
+            </p>
+        </div>
+        <div class="card">
+            <h3>Protect Wildlife</h3>
+            <p>We prevent turtles, fish, and birds from ingesting plastic
+                <br><a href="https://geolougy.com/k/%D8%B8%D9%87%D9%88%D8%B1-%D9%85%D8%B4%D9%83%D9%84%D8%A9-%D8%AA%D9%84%D9%88%D8%AB-%D8%A7%D9%84%D8%B4%D9%88%D8%A7%D8%B7%D8%A6-%D9%88%D9%85%D8%A7-%D9%87%D9%8A-%D8%A3%D8%B3%D8%A8%D8%A7%D8%A8%D9%87" target="_blank" rel="noopener noreferrer">(Source)</a>
+            </p>
+        </div>
     </div>
 </div>
 
